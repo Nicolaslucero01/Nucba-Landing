@@ -31,20 +31,21 @@ body {
   height: 80px;
   border-radius: 100px;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
 }
+.navbar ul {
+  display: flex;
+}
+
 .navbar li {
-  display: inline-block;
   padding: 0 20px;
 }
 
 .navbar ul li a {
   color: white;
-}
-
-.btn {
 }
 
 .btn a {
