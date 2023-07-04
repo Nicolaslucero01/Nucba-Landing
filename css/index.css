@@ -29,16 +29,18 @@ body {
 
 .headerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 90px;
   padding: 5px 50px;
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: rgba(219, 151, 61, 0.986);
+  background-color: rgba(207, 139, 50, 0.99);
 }
 
 .headerContainer img {
+  flex-direction: flex;
+  justify-content: flex-start;
   cursor: pointer;
   height: 75px;
   border-radius: 100px;
@@ -170,7 +172,6 @@ main {
   font-style: italic;
   font-weight: var(--text-weight);
   color: var(--text-color-white);
-  background-color: red;
 }
 
 .us-parrafos {
