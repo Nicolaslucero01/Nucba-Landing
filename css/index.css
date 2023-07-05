@@ -29,11 +29,12 @@ body {
 
 .headerContainer {
   display: flex;
-  justify-content: space-around;
-  height: 90px;
+  justify-content: space-between;
+  height: 60px;
   padding: 5px 50px;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: rgba(207, 139, 50, 0.99);
 }
@@ -42,7 +43,7 @@ body {
   flex-direction: flex;
   justify-content: flex-start;
   cursor: pointer;
-  height: 75px;
+  height: 58px;
   border-radius: 100px;
 }
 
@@ -87,22 +88,24 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  gap: 7rem;
+  gap: 3rem;
+  min-height: 100vh;
 }
 
 #hero {
   display: flex;
-  margin-top: 180px;
-  max-width: 80%;
-  padding: 1rem;
+  width: 90%;
+  padding: 4rem 1rem;
+  margin-top: -60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
   width: 70%;
-  gap: 4rem;
-  height: 50%;
+  gap: 2rem;
 }
 
 .hero-info h1 {
@@ -115,7 +118,6 @@ main {
 
 .hero-info p {
   color: var(--text-color-secondary);
-
   width: 80%;
   padding: 0.5rem;
 }
@@ -128,7 +130,8 @@ main {
   align-items: center;
 }
 
-.hero-btns a {
+.hero-btns a,
+.btn-cards {
   background-color: antiquewhite;
   min-width: 196px;
   display: flex;
@@ -141,7 +144,8 @@ main {
 }
 
 .hero-btns a:hover,
-.btn-contactar:hover {
+.btn-contactar:hover,
+.btn-cards {
   background-color: transparent;
   outline: 3px solid antiquewhite;
   color: antiquewhite;
@@ -158,23 +162,17 @@ main {
 
 #us {
   display: flex;
-  width: 80%;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 1rem;
-}
-
-#us h2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 45px;
-  font-style: italic;
-  font-weight: var(--text-weight);
-  color: var(--text-color-white);
+  margin-top: 10px;
+  width: 100%;
+  padding: 4rem 1rem;
+  margin-top: -60px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(105, 99, 92, 0.986);
 }
 
 .us-parrafos {
+  width: 90%;
   display: flex;
   gap: 1rem;
 }
@@ -182,4 +180,169 @@ main {
 .us-parrafos p {
   padding: 0.5rem;
   color: var(--text-color-secondary);
+  width: 100%;
+}
+
+/* =============== SERVICES CARDS =============== */
+
+#services {
+  display: flex;
+  width: 90%;
+  padding: 4rem 1rem;
+  margin-top: -60px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title-services {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: var(--text-weight);
+  color: var(--text-color-white);
+}
+
+.services-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  min-height: 500px;
+  width: 33%;
+  background-color: wheat;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.card-picture {
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-body h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.card-list {
+  padding: 0rem 1rem;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cards {
+  width: 300px;
+  display: flex;
+  background-color: var(--text-color-btn);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cards:hover {
+  background-color: transparent;
+  outline: 3px solid var(--text-color-btn);
+  color: var(--text-color-btn);
+  transition: all 100ms ease;
+}
+
+/* =============== CONTACT CARDS =============== */
+
+#contact {
+  display: flex;
+  width: 100%;
+  padding: 4rem 1rem;
+  margin-top: -60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(105, 99, 92, 0.986);
+  height: 340px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+  padding: 1rem;
+}
+
+.cards-contact-container {
+  display: flex;
+  width: 60%;
+  gap: 3rem;
+  height: 300px;
+}
+
+.card-contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 3rem;
+  align-items: center;
+  color: var(--text-color-white);
+}
+
+.info-contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--text-color-secondary);
+}
+
+/* =============== FOOTER =============== */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: unset;
+  gap: 10px;
+}
+
+.footer-container img {
+  width: 10%;
 }
