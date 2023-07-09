@@ -3,6 +3,10 @@
     display: none;
   }
 
+  .a-contact {
+    display: flex;
+  }
+
   .services-cards {
     flex-direction: column;
     justify-content: center;
@@ -46,20 +50,20 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin: 0.5rem 0 2rem 0;
   }
 }
 
 @media (max-width: 580px) {
-  /* =============== nAVBAR =============== */
+  /* =============== NAVBAR =============== */
 
   .navbar-list {
     display: none;
     position: absolute;
-    top: 65px;
-    width: 90%;
-    left: 5%;
-    right: 5%;
-    border: 2px solid orange;
+    top: 60px;
+    width: 95%;
+    left: 2.5%;
+    border: 2px solid var(--text-secondary);
     border-top: 0;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +74,7 @@
     -ms-border-radius: 0px 0px 10px 10px;
     -o-border-radius: 0px 0px 10px 10px;
     padding: 1.5rem;
-    background-color: brown;
+    background-color: gray;
     align-items: flex-start;
   }
 

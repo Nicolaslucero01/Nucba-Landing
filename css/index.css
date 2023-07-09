@@ -75,6 +75,10 @@ body {
   color: var(--text-color-white);
 }
 
+.a-contact {
+  display: NONE;
+}
+
 .btn-contactar {
   font-weight: 700;
   color: var(--text-color-btn);
