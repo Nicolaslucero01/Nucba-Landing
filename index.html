@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./img/fotoefectos.com_.jpg">
-  <link rel=" stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <title>LAN Designs</title>
 </head>
 
@@ -14,10 +15,17 @@
     <img src="./img/fotoefectos.com_.jpg">
 
     <nav class="navbar">
+      <label for="menu-hamburguesa" class="menu-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" id="menu-hamburguesa">
+
       <ul class="navbar-list">
         <li><a href="#hero">INICIO</a></li>
         <li><a href="#us">NOSOTROS</a></li>
         <li><a href="#services">PLANES</a></li>
+        <li><a href="#services">CONTACTAR</a></li>
+
       </ul>
 
       <a class="btn-contactar" href="#contact">Contactar</a>
@@ -34,16 +42,12 @@
     <section id="hero">
       <div class="hero-info" id="title">
         <h1>Bienvenidos a LAN Designs</h1>
-        <p>La página de destino enfocada en la conversión y la agencia de diseño web. Aceleramos el crecimiento
+        <p class="hero-container-p">La página de destino enfocada en la conversión y la agencia de diseño web.
+          Aceleramos el crecimiento
           empresarial a través de sitios web eficaces y diseños creativos de páginas de destino. Una página de destino
           bien diseñada dará lugar a un aumento de las conversiones para todas sus campañas.
           Puedes iniciar el diseño de tu sitio web en LatinoAmerica, Incluye dominio y hosting. </p>
 
-        <p>Además del diseño estético, nos enfocamos en la optimización de tu sitio web para los motores de búsqueda
-          (SEO), lo que te ayudará a obtener una mayor visibilidad en Internet y atraer a un público más amplio.
-          Implementamos técnicas y estrategias de SEO para mejorar la clasificación de tu sitio en los resultados de
-          búsqueda y aumentar el tráfico orgánico.
-        </p>
         <div class="hero-btns">
           <a>💰 Precios</a>
           <a>🖥️ Crea tu Web</a>
@@ -63,14 +67,11 @@
           mejor
           servicio.</p>
 
-        <p>Somos una desarrolladora web creada por un grupo de amigos enamorados de la programación. Contamos con la
-          experienca suficiente
-          para ofrecer servicios profesionales, los cuales ayudarán a posicionar su imagen en la WEB.
-          En 2021 iniciamos en el mundo del desarrollo Web, estudiando por nuestra cuenta. En 2022 nos anotamos en la
-          tecnicatura y en 2023, uno de nosotros, realizó un bootcamp de alto nivel para dominar todos los aspectos de
-          este maravilloso mundo. Todos nuestros integrantes continúan estudiando con el fin de brindar cada día un
-          mejor
-          servicio.</p>
+        <p>Además del diseño estético, nos enfocamos en la optimización de tu sitio web para los motores de búsqueda
+          (SEO), lo que te ayudará a obtener una mayor visibilidad en Internet y atraer a un público más amplio.
+          Implementamos técnicas y estrategias de SEO para mejorar la clasificación de tu sitio en los resultados de
+          búsqueda y aumentar el tráfico orgánico. na página de destino
+          bien diseñada dará lugar a un aumento de las conversiones para todas sus campañas.</p>
 
       </div>
     </section>
@@ -83,9 +84,8 @@
           <div class="card-body">
             <h2>Landing Basic</h2>
             <ul class="card-list">
-              <li>✅ Página web con 3 secciones</li>
+              <li>✅ Página web con hasta 3 secciones</li>
               <li>✅ Expandir tu marca</li>
-              <li>❌ Mantenimiento sin cargo</li>
               <li>❌ Posibilidad de vender productos</li>
             </ul>
           </div>
@@ -103,9 +103,8 @@
           <div class="card-body">
             <h2>Landing Premium</h2>
             <ul class="card-list">
-              <li>✅ Página web con 5 secciones</li>
+              <li>✅ Página web con hasta 5 secciones</li>
               <li>✅ Expandir tu marca</li>
-              <li>✅ Mantenimiento sin cargo</li>
               <li>❌ Posibilidad de vender productos</li>
 
             </ul>
@@ -126,9 +125,8 @@
           <div class="card-body">
             <h2>Ecommerce Page</h2>
             <ul class="card-list">
-              <li>✅ Página web</li>
+              <li>✅ Ecommerce Web</li>
               <li>✅ Expandir tu marca</li>
-              <li>✅ Mantenimiento sin cargo</li>
               <li>✅ Posibilidad de vender productos</li>
 
             </ul>
@@ -146,31 +144,24 @@
 
     <section id="contact">
       <div class="contact-container">
-        <div class="cards-contact-container">
-          <div class="card-contact">
-            <h3>Cipolletti, Río Negro</h3>
-            <div class="info-contact-card">
-              <span>📍España 230</span>
-              <span>📩 landesign_cipo@gmail.com</span>
-              <span>📞 298123465</span>
-            </div>
+        <div class="card-contact">
+          <h3>Cipolletti, Río Negro</h3>
+          <div class="info-contact-card">
+            <span>📍España 230</span>
+            <span>📩 landesign_cipo@gmail.com</span>
+            <span>📞 298123465</span>
           </div>
-          <div class="card-contact">
-            <h3>Neuquén, Neuquén</h3>
-            <div class="info-contact-card">
-              <span>📍Avenida Roca 183</span>
-              <span>📩 landesign_nqn@gmail.com</span>
-              <span>📞 299123465</span>
-            </div>
+        </div>
+        <div class="card-contact">
+          <h3>Neuquén, Neuquén</h3>
+          <div class="info-contact-card">
+            <span>📍Avenida Roca 183</span>
+            <span>📩 landesign_nqn@gmail.com</span>
+            <span>📞 299123465</span>
           </div>
         </div>
 
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5218.82514135796!2d-67.98983648686404!3d-38.94381282238529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30ee145c2355%3A0x488e3620b435393c!2sCipolletti%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1688586502335!5m2!1ses!2sar"
-            width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+
       </div>
     </section>
   </main>
@@ -178,10 +169,22 @@
 
   <footer id="footer">
     <div class="footer-container">
-      <img src="./img/logo.png">
+      <div class="footer-icons">
+        <a href="">
+          <i class="fa-brands fa-instagram" class="instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-whatsapp" class="whatsapp"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-facebook" class="facebook"></i>
+        </a>
+      </div>
       <p>&copy; LAN Designs 2023</p>
     </div>
   </footer>
+
+  <script src="https://kit.fontawesome.com/2a27fcfc26.js" crossorigin="anonymous"></script>
 
 </body>
 
