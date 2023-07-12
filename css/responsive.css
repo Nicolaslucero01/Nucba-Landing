@@ -129,4 +129,9 @@
   .hero-info h1 {
     font-size: 2rem;
   }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
