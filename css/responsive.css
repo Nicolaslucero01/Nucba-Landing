@@ -7,16 +7,6 @@
     display: flex;
   }
 
-  .services-cards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card {
-    width: 100%;
-  }
-
   .hero-btns {
     justify-content: center;
     align-items: center;
@@ -32,6 +22,10 @@
 
   .hero-picture {
     display: none;
+  }
+
+  .services-cards {
+    gap: 3rem;
   }
 
   .hero-container-p {
@@ -54,7 +48,13 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 768px) {
+  .container-faq {
+    width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
   /* =============== NAVBAR =============== */
 
   .navbar-list {
@@ -108,24 +108,14 @@
     flex-direction: column;
   }
 
-  /* =============== CONTACT CARDS =============== */
+  /* =============== CARDS =============== */
 
-  #contact {
-    height: 600px;
-  }
-  .contact-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-  }
-
-  .card-contact {
-    width: 100%;
+  .services-cards {
+    width: 95%;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .hero-info h1 {
     font-size: 2rem;
   }
@@ -133,5 +123,13 @@
   .footer-container {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .container-faq h1 {
+    text-align: center;
+  }
+
+  .card-faq label h2 {
+    font-size: 15px;
   }
 }

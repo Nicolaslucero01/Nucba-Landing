@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --text-background: rgba(219, 151, 61, 0.986);
+  --text-background: #14213d;
+  --background-two: rgba(255, 255, 255, 0.911);
   --text-color-white: #fefefe;
   --text-color-secondary: #fefefebe;
   --text-weight: 500;
@@ -19,6 +20,7 @@
   border: none;
   /* border: 0.0001px solid blueviolet; */
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -30,13 +32,12 @@ body {
 .headerContainer {
   display: flex;
   justify-content: space-between;
-  height: 60px;
   padding: 5px 50px;
   align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(207, 139, 50, 0.99);
+  background-color: #111b31;
 }
 
 .headerContainer img {
@@ -81,9 +82,9 @@ body {
 
 .btn-contactar {
   font-weight: 700;
-  color: var(--text-color-btn);
+  color: var(--text-background);
   padding: 9px 25px;
-  background-color: antiquewhite;
+  background-color: var(--text-color-white);
   border-radius: 50px;
   cursor: pointer;
 }
@@ -102,14 +103,12 @@ main {
   flex-direction: column;
   width: 100%;
   gap: 3rem;
-  min-height: 100vh;
 }
 
 #hero {
   display: flex;
   width: 90%;
   padding: 4rem 1rem;
-  margin-top: -60px;
   justify-content: center;
   align-items: center;
 }
@@ -145,13 +144,13 @@ main {
 
 .hero-btns a,
 .btn-cards {
-  background-color: antiquewhite;
+  background-color: var(--text-color-white);
   min-width: 196px;
   display: flex;
   justify-content: center;
   padding: 0.9rem;
   border-radius: 50px;
-  color: var(--text-color-btn);
+  color: var(--text-background);
   cursor: pointer;
   font-weight: 700;
 }
@@ -177,11 +176,11 @@ main {
 #us {
   display: flex;
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   margin-top: -60px;
   justify-content: center;
   align-items: center;
-  background: rgba(105, 99, 92, 0.986);
+  background-color: var(--background-two);
 }
 
 .us-parrafos {
@@ -192,7 +191,7 @@ main {
 
 .us-parrafos p {
   padding: 0.5rem;
-  color: var(--text-color-secondary);
+  color: black;
   width: 100%;
 }
 
@@ -200,7 +199,7 @@ main {
 
 #services {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 4rem 1rem;
   margin-top: -60px;
   flex-direction: column;
@@ -209,28 +208,29 @@ main {
 
 .title-services {
   display: flex;
-  justify-content: flex-start;
   font-size: 45px;
   font-style: italic;
   font-weight: var(--text-weight);
   color: var(--text-color-white);
+  justify-content: center;
 }
 
 .services-cards {
   display: flex;
-  width: 100%;
   gap: 1rem;
   margin: 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  width: 500px;
   gap: 2rem;
   min-height: 600px;
-  width: 33%;
-  background-color: wheat;
+  background-color: whitesmoke;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -279,61 +279,111 @@ main {
 
 .btn-cards {
   display: flex;
-  background-color: var(--text-color-btn);
+  background-color: #14213d;
+  color: var(--text-color-white);
 }
 
 .btn-cards:hover {
   background-color: transparent;
-  outline: 3px solid var(--text-color-btn);
-  color: var(--text-color-btn);
+  outline: 3px solid var(--text-background);
+  color: var(--text-background);
   transition: all 100ms ease;
 }
 
-/* =============== CONTACT CARDS =============== */
+/* =============== FAQ =============== */
 
-#contact {
-  display: flex;
+#faq-area {
   width: 100%;
-  padding: 4rem 1rem;
-  margin-top: -60px;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  background: rgba(105, 99, 92, 0.986);
-  height: 340px;
+  background-color: var(--background-two);
+  padding: 4rem 0;
 }
 
-.contact-container {
-  display: flex;
-  gap: 1rem;
+.container-faq {
   width: 90%;
-  padding: 1rem;
-}
-
-.cards-contact-container {
-  display: flex;
-  width: 100%;
-  gap: 3rem;
-  height: 300px;
-}
-
-.card-contact {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  gap: 3rem;
   align-items: center;
+  gap: 20px;
+}
+
+.container-faq h1 {
+  color: var(--text-background);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.card-faq {
+  position: relative;
+  width: 95%;
+  background: var(--text-background);
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(255, 255, 255, 0.068);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-faq:last-child {
+  margin-bottom: 2rem;
+}
+
+.card-faq input {
+  appearance: none;
+}
+
+.card-faq label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-faq label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
   color: var(--text-color-white);
-  justify-content: center;
-  align-items: center;
+  transition: transform 1s;
 }
 
-.info-contact-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.card-faq:hover label::after {
   color: var(--text-color-secondary);
+}
+.card-faq input:checked ~ label::after {
+  transform: rotate(135deg);
+  color: var(--text-color-secondary);
+}
+
+.card-faq label h2 {
+  position: relative;
+  font-weight: 500;
+  color: var(--text-color-white);
+  padding-right: 2.5rem;
+
+  font-weight: 700;
+  z-index: 10;
+}
+
+.content-card {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.card-faq input:checked ~ .content-card {
+  max-height: 100vh;
+}
+
+.content-card p {
+  position: relative;
+  padding: 10px 0;
+  color: var(--text-color-secondary);
+
+  z-index: 10;
+  margin-top: 10px;
 }
 
 /* =============== FOOTER =============== */
